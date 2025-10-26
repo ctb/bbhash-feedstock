@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
-  skip: True  # [win or py<3.11]
+  skip: True  # [win or py<311]
 
 requirements:
   build:
@@ -21,7 +21,7 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler("cxx") }}
   host:
-    - cython >=0.29.21
+    - cython >=3.1.6
     - setuptools >=74.1
     - python
     - numpy
