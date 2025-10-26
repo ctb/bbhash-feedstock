@@ -40,8 +40,8 @@ test:
     - pip
     - pytest
   source_files:
-    - test_table.py
-    - test_bbhash.py
+    - tests/test_table.py
+    - tests/test_bbhash.py
 
 about:
   home: http://github.com/dib-lab/pybbhash
